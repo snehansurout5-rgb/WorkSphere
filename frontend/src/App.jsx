@@ -1,11 +1,15 @@
 import React from 'react'
+import {Toaster} from "react-hot-toast"
+import { Route } from 'react-router-dom'
 
 const App = () => {
   return (
-    <div>
-        <div className="text-3xl bg-gray-500">App is on</div>
-      
-    </div>
+    <>
+      <Toaster/>
+      <Routes >
+        <Route path="/" element={<LoginLanding/>}/>
+      </Routes>
+    </>
   )
 }
 
